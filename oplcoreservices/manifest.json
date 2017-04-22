@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Oslo public library core services",
+  "version": "1.0",
+  "description": "Provides access to core services",
+  "permissions": [
+    "bookmarks"
+  ],
+  "icons": {
+    "48": "icons/cat.png"
+  },
+  "background": {
+    "scripts": ["scripts/background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*/additem.pl*"
+      ],
+      "js": [
+        "scripts/addItems.js"
+      ]
+    }
+  ],
+  "page_action": {
+    "default_icon": "icons/cat.png",
+    "default_title": "OPL"
+  }
+}
