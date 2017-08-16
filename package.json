@@ -1,0 +1,18 @@
+{
+  "name": "OPLCoreServices",
+  "version": "1.0.0",
+  "description": "Deployed core services",
+  "main": "index.js",
+  "scripts": {
+    "main": "node $NODE_DEBUG_OPTION ./scripts/bookmark.js",
+    "test": "mocha test/bookmark.spec.js"
+  },
+  "author": "rurik.greenall@computas.com",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.4.1",
+    "sinon-chrome": "^2.2.1"
+  }
+}
